@@ -9,28 +9,6 @@ A MERN-stack project with a Vite + React frontend for searching GitHub users, vi
 - Explore repositories and their last 5 commits.
 - Responsive UI with Bootstrap 5.
 - Loader for API requests.
-- Fully typed and modular backend with Express.
-
-## Project Structure
-
-github-browser/
-│
-├─ backend/ # Express backend
-│ ├─ routes/
-│ ├─ utils/
-│ ├─ server.js
-│ ├─ app.js
-│ └─ package.json
-│
-├─ frontend-vite/ # Vite + React frontend
-│ ├─ src/
-│ │ ├─ components/
-│ │ ├─ App.jsx
-│ │ ├─ main.jsx
-│ │ └─ index.css
-│ └─ package.json
-│
-└─ .gitignore
 
 ## Prerequisites
 
@@ -43,33 +21,44 @@ github-browser/
 ### 1. Backend
 
 cd backend
+
 npm install
+
 Create a .env file in the backend folder (optional) for a GitHub token:
 
 GITHUB_TOKEN=your_github_token
 PORT=5000
 
 Start the server
+
 npm start
 
 ### 2. frontend
 
 cd frontend-vite
+
 npm install
+
 npm run dev
+
 Frontend runs on: http://localhost:5173
 
 ### Running tests
 
 Frontend snapshot & unit tests:
+
 cd frontend-vite
+
 npm run test
 
 Backend tests:
+
 cd backend
+
 npm test
 
 ### Notes
 
 Backend uses helmet for security headers and cors for cross-origin requests.
+
 Frontend uses Bootstrap 5 for styling.
