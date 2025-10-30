@@ -1,6 +1,3 @@
-# Ignore old React frontend
-/frontend/
-
 # Node modules
 /backend/node_modules/
 frontend-vite/node_modules/
